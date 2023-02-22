@@ -30,9 +30,7 @@ ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
 
 
 <head>
-    <style>
 
-    </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
@@ -63,6 +61,7 @@ ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
         }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -395,6 +394,25 @@ ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
         // EXTRA Crea con JavaScript la funzionalità per rimuovere il link "twitter" sotto alla sezione "Altro" nell'elemento "aside". Deve avvenire al caricamento della pagina, automticamente.
         // EXTRA Crea con JavaScript la funzionalità per rimuovere il corrispondente elemento padre dal DOM cliccando sul link "Continua a leggere".
         // EXTRA Crea con JavaScript la funzionalità per creare un alert col nome dell'autore ogni volta che il cursore passa sopra l'autore del post.
+
+        window.onload = function () {
+            document.querySelector("aside div:last-child ol li:nth-of-type(2)").remove()
+            for (let link of document.querySelectorAll(".stretched-link")) {
+                link.onclick = function (param) {
+                    param.preventDefault()
+                    param.target.closest(".col-md-6").remove()
+                }
+            }
+
+            for (let author of document.querySelectorAll(".blog-post-meta a"))
+                author.addEventListener("mouseover", function(event) {
+                    alert(event.target.innerText)
+                })
+        }
+
+
+
+
 
     </script>
 </body>
