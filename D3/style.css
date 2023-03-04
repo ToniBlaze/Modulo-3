@@ -1,0 +1,29 @@
+.margin-y {
+    margin-top: 8rem;
+    margin-bottom: 7rem;
+}
+
+
+.carousel {
+    padding: 2rem 0;
+}
+
+/* LOGO */
+#logo {
+    overflow: hidden;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2px;
+    background-color: black;
+}
+
+#logo img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
