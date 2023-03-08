@@ -5,26 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agenzia Viaggi</title>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href=".\bootstrap\css\bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <main class="container">
-        <div class="p-5 mb-4 bg-light rounded-3">
-            <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-                <p class="col-md-8 fs-4">
-                    Using a series of utilities, you can create this jumbotron, just
-                    like the one in previous versions of Bootstrap. Check out the
-                    examples below for how you can remix and restyle it to your liking.
-                </p>
-                <button class="btn btn-primary btn-lg" type="button">
-                    Example button
-                </button>
-            </div>
-        </div>
+	<nav class="navbar navbar-expand-lg bg-body-white">
+		<div class="container-fluid">
+			<img src="assets\holy-dayz.png" height=80px width=80px/>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+					  <a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Offerte</a>
+					</li>
+					<li class="nav-item dropdown">
+					  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Destinazioni
+					  </a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Europa</a></li>
+						<li><a class="dropdown-item" href="#">Americhe</a></li>
+						<li><a class="dropdown-item" href="#">Oriente</a></li>
+						<li><a class="dropdown-item" href="#">Africa</a></li>
+					</ul>
+					</li>
+					<li class="nav-item dropdown">
+					  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Tipi di Vacanze
+					  </a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Luxury Hotels</a></li>
+						<li><a class="dropdown-item" href="#">Local Habits</a></li>
+						<li><a class="dropdown-item" href="#">Into the Wild</a></li>
+						<li><a class="dropdown-item" href="#">Total relax</a></li>
+					</ul>
+					</li>
+				</ul>
+						
+				<div>
+					<!-- Da inserire le icone di CERCA + LOVE + UTENTE -->
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+
+	
+    <main class="container-fluid">
+		<div class="jumbotron custom-bg">
+			<div class="p-5 mb-4 bg-light rounded-3">
+				<div class="container-fluid py-5">
+					<h1 class="display-5 fw-bold">HOLY-DAYZ</h1>
+					<p class="col-md-8 fs-4">
+						"Make Great your "Sacred Days!"
+					</p>
+				</div>
+			</div>
+		</div>
     </main>
+	
     
     <script src=".\bootstrap\js\bootstrap.js"></script>
 </body>
