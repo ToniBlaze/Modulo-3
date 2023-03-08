@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agenzia Viaggi</title>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href=".\bootstrap\css\bootstrap.css" />
+	<script src="https://kit.fontawesome.com/4ff9d5921a.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href=".\bootstrap\css\bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg bg-body-white">
-		<div class="container-fluid">
+	<nav class="navbar navbar-expand-lg bg-white sticky-top">
+		<div class="container-fluid bg-white">
 			<img src="assets\holy-dayz.png" height=80px width=80px/>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -49,26 +50,181 @@
 					</li>
 				</ul>
 						
-				<div>
-					<!-- Da inserire le icone di CERCA + LOVE + UTENTE -->
+				<div class="fs-4 ">
+					<a href="#"><i class="text-dark px-2 fa-solid fa-magnifying-glass"></i></a>
+					<a href="#"><i class="text-dark px-2 fa-regular fa-heart"></i></a>
+					<a href="#"><i class="text-dark px-2 fa-solid fa-circle-user"></i></a>
 				</div>
 			</div>
 		</div>
 	</nav>
-	
-
-	
-    <main class="container-fluid">
-		<div class="jumbotron custom-bg">
-			<div class="p-5 mb-4 bg-light rounded-3">
+		
+    <main>
+		<!-- Jumbotron -->
+		<div class="w-100 myb-5">
+			<div class="p-5 mb-4 bg-light custom-bg">
 				<div class="container-fluid py-5">
 					<h1 class="display-5 fw-bold">HOLY-DAYZ</h1>
-					<p class="col-md-8 fs-4">
-						"Make Great your "Sacred Days!"
+					<p class="col-md-8 fs-4 fw-bold">
+						Make Great your "Sacred Days"!
 					</p>
 				</div>
 			</div>
 		</div>
+
+		<!-- Offerta della settimana -->
+		<section class="container">
+			<div class="row customMarginBottom">
+				<h4 class="text-center my-4">Offerta della Settimana</h4>
+
+				<div class="col-12 col-md-4 col-lg-3 py-2">
+					<a target="_blank" href="#" class="text-decoration-none text-dark"><div class="myCard">
+						<div class="card w-100">
+							<img src="assets/hanoi.jpg" class="card-img-top w-100" alt="...">
+							<div class="card-body">
+								<h4>Hanoi - Vietnam</h4>
+								<p class="card-text">A partire da: 699€</p>
+							</div>
+						</div>
+					</div></a>           
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-3 py-2">
+					<a target="_blank" href="#" class="text-decoration-none text-dark"><div class="myCard">
+						<div class="card w-100">
+							<img src="assets/new-york.jpg" class="card-img-top w-100" alt="...">
+							<div class="card-body">
+								<h4>New York - USA</h4>
+								<p class="card-text">A partire da: 1099€</p>
+							</div>
+						</div>
+					</div></a>           
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-3 py-2">
+					<a target="_blank" href="#" class="text-decoration-none text-dark"><div class="myCard">
+						<div class="card w-100">
+							<img src="assets/jordan.jpg" class="card-img-top w-100" alt="...">
+							<div class="card-body">
+								<h4>Petra - Jordan</h4>
+								<p class="card-text">A partire da: 899€</p>
+							</div>
+						</div>
+					</div></a>           
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-3 py-2">
+					<a target="_blank" href="#" class="text-decoration-none text-dark"><div class="myCard">
+						<div class="card w-100">
+							<img src="assets/bangkok.jpg" class="card-img-top w-100" alt="...">
+							<div class="card-body">
+								<h4>Bangkok - Thailand</h4>
+								<p class="card-text">A partire da: 999€</p>
+							</div>
+						</div>
+					</div></a>         
+				</div>				
+			</div>
+		</section>
+
+		<!-- Welcome Summer! -->
+		<section class="container">
+			<div class="row customMarginBottom">
+				<h4 class="text-center my-4">Welcome Summer!</h4>
+
+				<div class="col-12 col-md-4 col-lg-2 py-2">
+					<a target="_blank" href="#" class="text-decoration-none text-dark"><div class="myCard">
+						<div class="card2 w-100">
+							<img src="assets/fuerteventura.jpg" class="card-img-top w-100" alt="...">
+							<div class="card-body text-center">
+								<h4 class="fs-5">Fuerteventura</h4>
+								<p class="card-text">Da 499€</p>
+							</div>
+						</div> 
+					</div></a>          
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-2 py-2">
+					<a target="_blank" href="#" class="text-decoration-none text-dark"><div class="myCard">
+						<div class="card2 w-100">
+							<img src="assets/greece.jpg" class="card-img-top w-100" alt="...">
+							<div class="card-body text-center">
+								<h4 class="fs-5">Grecia</h4>
+								<p class="card-text">Da 399€</p>
+							</div>
+						</div> 
+					</div></a>          
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-2 py-2">
+					<a target="_blank" href="#" class="text-decoration-none text-dark"><div class="myCard">
+						<div class="card2 w-100">
+							<img src="assets/Madeira.jpg" class="card-img-top w-100" alt="...">
+							<div class="card-body text-center">
+								<h4 class="fs-5">Madeira</h4>
+								<p class="card-text">Da 1099€</p>
+							</div>
+						</div> 
+					</div></a>          
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-2 py-2">
+					<a target="_blank" href="#" class="text-decoration-none text-dark"><div class="myCard">
+						<div class="card2 w-100">
+							<img src="assets/sardegna.jpg" class="card-img-top w-100" alt="...">
+							<div class="card-body text-center">
+								<h4 class="fs-5">Sardegna</h4>
+								<p class="card-text">Da 999€</p>
+							</div>
+						</div> 
+					</div></a>          
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-2 py-2">
+					<a target="_blank" href="#" class="text-decoration-none text-dark"><div class="myCard">
+						<div class="card2 w-100">
+							<img src="assets/puglia.jpg" class="card-img-top w-100" alt="...">
+							<div class="card-body text-center">
+								<h4 class="fs-5">Puglia</h4>
+								<p class="card-text">Da 399€</p>
+							</div>
+						</div> 
+					</div></a>          
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-2 py-2">
+					<a target="_blank" href="#" class="text-decoration-none text-dark"><div class="myCard">
+						<div class="card2 w-100">
+							<img src="assets/Sicilia.jpg" class="card-img-top w-100" alt="...">
+							<div class="card-body text-center">
+								<h4 class="fs-5">Sicilia</h4>
+								<p class="card-text">Da 499€</p>
+							</div>
+						</div> 
+					</div></a>          
+				</div>
+			</div>
+		</section>
+
+		<!-- Offerta del Giorno -->
+		<section id="day-offert" class="my-5 d-none d-sm-block ">
+			<div class="container">
+				<h2>Offerta del giorno</h2>
+				<div class="row">
+					<div class="col-sm-9 myCard px-0" style="overflow: hidden; height: fit-content;">
+						<img class="img-fluid" src="assets/brasile.jpg" alt="" srcset="">
+					</div>
+					<div class="col-sm-3 text-center align-self-center">
+						<h5>Brasile</h5>
+						<p>Volo + Hotel + Esperienze</p>
+						<h6>A partire da: 699€!</h6>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
     </main>
 	
     
