@@ -107,16 +107,11 @@ nav {
 /* MAIN */ 
 
 main, footer {
-    background-color: rgb(238, 238, 238);
+    /* background-color: rgb(238, 238, 238); */
+    background-color: rgb(199, 22, 22);
 }
 
-.button-carousel {
-    height: 35px;
-    width: 35px;
-    background-color: white;
-    color: red;
-}
-
+/* CARD (e FOOTER) */
 .bi-star-fill, .bi-star-half, .bi-star {
     font-size: 10px;
 }
@@ -129,6 +124,26 @@ main, footer {
 .user-name, .card-footer i, .custom-fs {
     font-size: 11px;
 }
+
+/* CAROSELLO */
+
+.carousel-inner {
+    overflow: visible;
+}
+
+.carousel-control-prev {
+    transform: translateX(-50%);
+    background-color: aqua;
+}
+
+.carousel-control-next {
+    transform: translateX(50%);
+    background-color: aqua;
+}
+
+
+
+
 
 
 
