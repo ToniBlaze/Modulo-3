@@ -59,7 +59,7 @@ nav {
 
 /* HERO  */
 #hero {
-    background-color: rgb(84, 71, 255);
+    background-color: rgb(106, 95, 255);
 }
 
 #hero div.container div.row div.card {
@@ -77,7 +77,58 @@ nav {
     font-weight: 600;
 }
 
+#img-hero {
+    height: 300px;
+}
 
 #img-hero img {
     object-fit: cover;
+    height: 100%;
 }
+
+/* RIQUADRO SOTTO HERO */
+.icon-circle {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 226, 215);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-circle span {
+    color: rgb(180, 140, 140);
+}
+
+#sub-hero {
+    padding: 0.5rem 0 1rem 0;
+}
+
+/* MAIN */ 
+
+main, footer {
+    background-color: rgb(238, 238, 238);
+}
+
+.button-carousel {
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    color: red;
+}
+
+.bi-star-fill, .bi-star-half, .bi-star {
+    font-size: 10px;
+}
+
+.user-image img {
+    height: 28px;
+    width: 28px;
+}
+
+.user-name, .card-footer i, .custom-fs {
+    font-size: 11px;
+}
+
+
+
