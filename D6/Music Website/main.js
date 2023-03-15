@@ -26,10 +26,10 @@ window.onload = function () {
   clickBtn();
 };
 
-function footer() {
-  let nAlbum = document.querySelectorAll("img").length - 1;
-  let span = document.createElement("span");
-  span.classList.add("text-bg-light");
-  span.innerHTML = "Questa pagina contiene " + nAlbum + " album";
-  document.querySelector("footer").appendChild(span);
-}
+// function footer() {
+//   let nAlbum = document.querySelectorAll("img").length - 1;
+//   let span = document.createElement("span");
+//   span.classList.add("text-bg-light");
+//   span.innerHTML = "Questa pagina contiene " + nAlbum + " album";
+//   document.querySelector("footer").appendChild(span);
+// }
