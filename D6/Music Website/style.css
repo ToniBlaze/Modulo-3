@@ -41,8 +41,16 @@
 /* CARD */
 .myCard {
   box-shadow: 6px 5px 8px rgb(134, 134, 134);
-  overflow: hidden;
   border-radius: 20px;
+}
+
+.card {
+  border-radius: 20px;
+}
+
+.myCard img {
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
 }
 
 .myCarousel {
@@ -93,11 +101,9 @@ footer {
 
 /* ESERCIZIO 6 - MIGLIORIE */
 
-.badge {
-  position: relative;
-  top: -95%;
-  left: 81%;
-  transform: rotate(33deg);
+.rotazione {
+  transform: rotate(33deg) !important;
+  left: 80% !important;
 }
 
 /* TABELLA */
@@ -128,5 +134,17 @@ footer {
   background-color: rgb(0, 156, 0);
   transform: translateY(-8px);
   scale: 1.1;
+}
+
+.myCard:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transform: translateY(-8px);
+  scale: 1.1;
+}
+/* BOTTONE SHOW - HIDE */
+
+.bottone {
+  background-color: black;
+  color: white;
 }
   
