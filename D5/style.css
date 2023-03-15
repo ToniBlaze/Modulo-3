@@ -107,8 +107,7 @@ nav {
 /* MAIN */ 
 
 main, footer {
-    /* background-color: rgb(238, 238, 238); */
-    background-color: rgb(199, 22, 22);
+    background-color: rgb(238, 238, 238);
 }
 
 /* CARD (e FOOTER) */
@@ -132,15 +131,16 @@ main, footer {
 }
 
 .carousel-control-prev {
-    transform: translateX(-50%);
-    background-color: aqua;
+    transform: translateX(-40%);
 }
 
 .carousel-control-next {
-    transform: translateX(50%);
-    background-color: aqua;
+    transform: translateX(40%);
 }
 
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgb(77, 77, 77);
+}
 
 
 
