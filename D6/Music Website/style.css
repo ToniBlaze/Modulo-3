@@ -1,88 +1,123 @@
-
 .navbarcolor {
-    background-color: rgb(248, 248, 248);
-    box-shadow: 0 0 15px rgb(185, 185, 185);
+  background-color: rgb(248, 248, 248);
+  box-shadow: 0 0 15px rgb(185, 185, 185);
 }
 
 .margin-y {
-    margin-top: 8rem;
-    margin-bottom: 7rem;
+  margin-top: 8rem;
+  margin-bottom: 7rem;
 }
 
-
 .carousel {
-    padding: 2rem 0;
+  padding: 2rem 0;
 }
 
 /* LOGO */
 .logo {
-    overflow: hidden;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 2px;
-    background-color: black;
+  overflow: hidden;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2px;
+  background-color: black;
 }
 
 .logo img {
-    height: 80px;
-    width: 80px;
-    object-fit: cover;
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
 }
 
-/* CARD */ 
+/* JUMBOTRON */
+.custom-bg {
+  background-image: url("assets/jumbotron-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* CARD */
 .myCard {
-    box-shadow: 6px 5px 8px rgb(134, 134, 134);
-    overflow: hidden;
-    border-radius: 20px;
+  box-shadow: 6px 5px 8px rgb(134, 134, 134);
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .myCarousel {
-    box-shadow: 6px 5px 8px rgb(134, 134, 134);
-    overflow: hidden;
-    border-radius: 10px;
-    padding: 0;
-    margin-bottom: 5rem;
-    margin-top: 2rem;
+  box-shadow: 6px 5px 8px rgb(134, 134, 134);
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 0;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
 }
 
 .comment {
-    height: 80px;
-    width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 7rem;
+  height: 80px;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 7rem;
 
-    text-align: start;
-    white-space: normal;
+  text-align: start;
+  white-space: normal;
 }
 
-
 footer {
-    padding-top: 2rem;
-    border-top: 1px solid black;
-    width: 100%;
-    height: fit-content;
+  padding-top: 2rem;
+  border-top: 1px solid black;
+  width: 100%;
+  height: fit-content;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footerCategories {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .footerCategories a {
-    text-decoration: none;
-    color: rgb(19, 19, 177)
+  text-decoration: none;
+  color: rgb(19, 19, 177);
 }
 
 .logoFooter {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
+
+/* ESERCIZIO 6 - MIGLIORIE */
+
+.badge {
+  position: relative;
+  top: -95%;
+  left: 81%;
+  transform: rotate(33deg);
+}
+
+/* TABELLA */
+
+.album-tracks {
+  padding: 50px 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.album-tracks h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(255, 255, 255);
+
+  
+}
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: rgb(231, 251, 255);
+  }
+  
