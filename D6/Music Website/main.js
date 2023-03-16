@@ -15,21 +15,15 @@ function deleteRowTable(elem) {
 	elem.parentNode.parentNode.remove()
 }
 
-
-function clickBtn() {
-  for (let index of document.querySelectorAll("section")) {
-    index.children[0].classList.add("collapse");
-    index.children[0].classList.add("show");
-    index.innerHTML =
-      `<button class="bottone btn btn-outline-warning toggle-btn m-2" data-bs-target="#${index.id} > div" data-bs-toggle="collapse"> SHOW/HIDE <br>${index.id}</button>` +
-      index.innerHTML;
-  }
+function showHide(elem) {
+  elem.nextElementSibling.classList.toggle("collapse");
 }
 
-window.onload = function() {
-  footer();
-  clickBtn();
-};
+
+// window.onload = function() {
+//   footer();
+//   clickBtn();
+// };
 
 
 
