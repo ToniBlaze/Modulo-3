@@ -5,11 +5,16 @@
 //   row.remove();
 // });
 
-function deleteRowTable() {
-  let elimina = document.querySelector(".delete-row");
-  let row = elimina.parentNode.parentNode;
-  row.remove();
+// function deleteRowTable() {
+//   let elimina = document.querySelector(".delete-row");
+//   let row = elimina.parentNode.parentNode;
+//   row.remove();
+// }
+
+function deleteRowTable(elem) {
+	elem.parentNode.parentNode.remove()
 }
+
 
 function clickBtn() {
   for (let index of document.querySelectorAll("section")) {
@@ -25,6 +30,8 @@ window.onload = function () {
   footer();
   clickBtn();
 };
+
+
 
 // function footer() {
 //   let nAlbum = document.querySelectorAll("img").length - 1;
