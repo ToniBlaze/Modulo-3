@@ -50,11 +50,13 @@
             </div>
         </div>
     </div>
-
     <main class="container">
 
         <!-- FIRST SECTION -->
         <div class="container my-5" id="best-album">
+            <button onclick="showHide(this)" class="btn btn-secondary">
+				Show / Hide <br> "the Cards"
+			</button>
             <div class="row gy-3">
 
                 <div class="col-6 col-md-4 col-lg-3 py-2 position-relative">
@@ -199,6 +201,9 @@
 
         <!-- TABELLA CON TRACCIE E BOTTONI e MODALE-->
         <section class="album-tracks" id="tabella">
+            <button onclick="showHide(this)" class="btn btn-secondary">
+				Show / Hide <br> "the Table"
+			</button>
             <div>
                 <div class="container">
                     <div class="row">
@@ -221,71 +226,70 @@
                                         <td>The Genesis</td>
                                         <td>Nas</td>
                                         <td>1:45</td>
-                                        <td><button onclick="deleteRowTable()" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
                                     </tr>
                                     <tr>
                                         <th>2</th>
                                         <td>N.Y. State of Mind</td>
                                         <td>Nas</td>
                                         <td>4:53</td>
-                                        <td><button onclick="deleteRowTable()" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
                                     </tr>
                                     <tr>
                                         <th>3</th>
                                         <td>Life's a Bitch</td>
                                         <td>Nas</td>
                                         <td>3:30</td>
-                                        <td><button onclick="deleteRowTable()" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
                                     </tr>
                                     <tr>
                                         <th>4</th>
                                         <td>The World Is Yours</td>
                                         <td>Nas</td>
                                         <td>4:50</td>
-                                        <td><button onclick="deleteRowTable()" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
                                     </tr>
                                     <tr>
                                         <th>5</th>
                                         <td>Halftime</td>
                                         <td>Nas</td>
                                         <td>4:20</td>
-                                        <td><button onclick="deleteRowTable()" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
                                     </tr>
                                     <tr>
                                         <th>6</th>
                                         <td>Memory Lane</td>
                                         <td>Nas</td>
                                         <td>4:08</td>
-                                        <td><button onclick="deleteRowTable()" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
                                     </tr>
                                     <tr>
                                         <th>7</th>
                                         <td>One Love</td>
                                         <td>Nas</td>
                                         <td>5:25</td>
-                                        <td><button onclick="deleteRowTable()" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
                                     </tr>
                                     <tr>
                                         <th>8</th>
                                         <td>One Time 4 Your Mind</td>
                                         <td>Nas</td>
                                         <td>3:18</td>
-                                        <td><button onclick="deleteRowTable()" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
                                     </tr>
                                     <tr>
                                         <th>9</th>
                                         <td>Represent</td>
                                         <td>Nas</td>
                                         <td>4:12</td>
-                                        <td><button onclick="deleteRowTable()" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
-
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
                                     </tr>
                                     <tr>
                                         <th>10</th>
                                         <td>It Ain't Hard to Tell</td>
                                         <td>Nas</td>
                                         <td>3:22</td>
-                                        <td><button onclick="deleteRowTable()" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -340,50 +344,56 @@
 
 
         <!-- MY BEST -->
+        
         <div class="container margin-y">
-            <h4 id="favorite-album" class="pb-3">Ti svelo l'album che sto ascoltando a ripetizione..</h4>
-            <div class="row">
-                <div class="card mb-3 px-0">
-                    <div class="row g-0">
-                        <div class="col-md-8">
-                            <img src="assets/snaktheripper.jpg" class="img-fluid rounded-start w-100" alt="...">
-                        </div>
-                        <div class="col-md-4 h-100">
-                            <div class="card-body">
-                                <h5 class="card-title my-2 px-3">Off the Rails</h5>
-                                <h6 class="my-2 px-3">Snak The Ripper</h6>
-                                <p class="card-text my-2 px-3">Data uscita: 16 Agosto 2018</p>
+            <div>
+                <button onclick="showHide(this)" class="btn btn-secondary mb-5">
+                    Show / Hide <br> "My Best Album"
+                </button>
+                <div class="row">
+                    <h4 id="favorite-album" class="pb-3">Ti svelo l'album che sto ascoltando a ripetizione..</h4>
+                    <div class="card mb-3 px-0">
+                        <div class="row g-0">
+                            <div class="col-md-8">
+                                <img src="assets/snaktheripper.jpg" class="img-fluid rounded-start w-100" alt="...">
+                            </div>
+                            <div class="col-md-4 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title my-2 px-3">Off the Rails</h5>
+                                    <h6 class="my-2 px-3">Snak The Ripper</h6>
+                                    <p class="card-text my-2 px-3">Data uscita: 16 Agosto 2018</p>
 
-                                <!-- LISTA BRANI -->
-                                <div class="col-12 my-2 px-3">
-                                    <p>
-                                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseWidthExample" aria-expanded="false"
-                                            aria-controls="collapseWidthExample">
-                                            Clicca per vedere la lista dei brani
-                                        </button>
-                                    </p>
-                                    <div style="min-height: fit-content;">
-                                        <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                                            <div class="card card-body" style="width: fit-content;">
-                                                <ul id="track-list">
-                                                    <li class="my-2">1. Off the Rails</li>
-                                                    <li class="my-2">2. Say My Name</li>
-                                                    <li class="my-2">3. I Ain't Dead</li>
-                                                    <li class="my-2">4. Knuckle Sandwich</li>
-                                                    <li class="my-2">5. I'm Good</li>
-                                                    <li class="my-2">6. Real Drugs</li>
-                                                    <li class="my-2">7. Hour Glass</li>
-                                                    <li class="my-2">8. All Out</li>
-                                                    <li class="my-2">9. Ashes</li>
-                                                    <li class="my-2">10. Baby Boy</li>
-                                                    <li class="my-2">11. Driftin</li>
-                                                    <li class="my-2">12. Shania Twain</li>
-                                                    <li class="my-2">13. Criminal Ideas</li>
-                                                    <li class="my-2">14. Paid Up</li>
-                                                    <li class="my-2">15. Highs and Lows</li>
-                                                    <li class="my-2">16. Lesson Learned</li>
-                                                </ul>
+                                    <!-- LISTA BRANI -->
+                                    <div class="col-12 my-2 px-3">
+                                        <p>
+                                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseWidthExample" aria-expanded="false"
+                                                aria-controls="collapseWidthExample">
+                                                Clicca per vedere la lista dei brani
+                                            </button>
+                                        </p>
+                                        <div style="min-height: fit-content;">
+                                            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                                <div class="card card-body" style="width: fit-content;">
+                                                    <ul id="track-list">
+                                                        <li class="my-2">1. Off the Rails</li>
+                                                        <li class="my-2">2. Say My Name</li>
+                                                        <li class="my-2">3. I Ain't Dead</li>
+                                                        <li class="my-2">4. Knuckle Sandwich</li>
+                                                        <li class="my-2">5. I'm Good</li>
+                                                        <li class="my-2">6. Real Drugs</li>
+                                                        <li class="my-2">7. Hour Glass</li>
+                                                        <li class="my-2">8. All Out</li>
+                                                        <li class="my-2">9. Ashes</li>
+                                                        <li class="my-2">10. Baby Boy</li>
+                                                        <li class="my-2">11. Driftin</li>
+                                                        <li class="my-2">12. Shania Twain</li>
+                                                        <li class="my-2">13. Criminal Ideas</li>
+                                                        <li class="my-2">14. Paid Up</li>
+                                                        <li class="my-2">15. Highs and Lows</li>
+                                                        <li class="my-2">16. Lesson Learned</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -397,6 +407,9 @@
 
         <!-- TO AVOID -->
         <div class="container col-lg-12" id="to-avoid">
+            <button onclick="showHide(this)" class="btn btn-secondary mb-2">
+                Show / Hide <br> "Album to Avoid"
+            </button>
             <div class="carousel row col-lg-12">
                 <h4 id="worste-album col-5">E quelli da evitare...</h4>
                 <div id="carouselExampleCaptions" class="carousel slide col-sm-3 container myCarousel">
