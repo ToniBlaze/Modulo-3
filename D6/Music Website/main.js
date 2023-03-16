@@ -26,7 +26,7 @@ function clickBtn() {
   }
 }
 
-window.onload = function () {
+window.onload = function() {
   footer();
   clickBtn();
 };
