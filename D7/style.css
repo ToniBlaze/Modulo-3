@@ -21,45 +21,102 @@
 }
 
 @keyframes bounce {
-    0% {
-      top: 15px;
-      transform: scaleX(1);
-      animation-timing-function: ease-in;
-    }
+  0% {
+    top: 15px;
+    transform: scaleX(1);
+    animation-timing-function: ease-in;
+  }
 
-    48% {
-        transform: scaleX(1);
-        animation-timing-function: ease-in;
-    }
+  48% {
+    transform: scaleX(1);
+    animation-timing-function: ease-in;
+  }
 
-    49% {
-        transform: scaleX(1.2);
-        animation-timing-function: ease-out;
-    }
+  49% {
+    transform: scaleX(1.2);
+    animation-timing-function: ease-out;
+  }
 
-    50% {
-        top: 330px;
-        transform: scaleY(0.8);
-        animation-timing-function: ease-out;
-      
-        transform: scaleX(1.4);
-        animation-timing-function: ease-out;
-    }
+  50% {
+    top: 330px;
+    transform: scaleY(0.8);
+    animation-timing-function: ease-out;
 
-    51% {
-        transform: scaleX(1.2);
-        animation-timing-function: ease-in;
-    }
+    transform: scaleX(1.4);
+    animation-timing-function: ease-out;
+  }
 
-    52% {
-        transform: scaleX(1);
-        animation-timing-function: ease-in;
-    }
-  
-    100% {
-      top: 15px;
-      transform: scaleX(1);
-      animation-timing-function: ease-in;
-    }
+  51% {
+    transform: scaleX(1.2);
+    animation-timing-function: ease-in;
+  }
 
+  52% {
+    transform: scaleX(1);
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    top: 15px;
+    transform: scaleX(1);
+    animation-timing-function: ease-in;
+  }
+}
+
+.shadow {
+  height: 10px;
+  width: 50px;
+  background-color: rgb(136, 136, 136);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5%;
+  animation: shadow 1s infinite ease-in-out;
+  opacity: 1;
+}
+
+@keyframes shadow {
+  0% {
+    opacity: 0.2;
+    transform: scaleX(0.5);
+  }
+
+  12.5% {
+    opacity: 0.33;
+    transform: scaleX(0.6);
+  }
+
+  25% {
+    opacity: 0.5;
+    transform: scaleX(0.7);
+  }
+
+  37.5% {
+    opacity: 0.70;
+    transform: scaleX(0.8);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scaleX(1.1);
+  }
+
+  62.5% {
+    opacity: 0.70;
+    transform: scaleX(0.8);
+  }
+
+  75% {
+    opacity: 0.5;
+    transform: scaleX(0.7);
+  }
+
+  87.5% {
+    opacity: 0.33;
+    transform: scaleX(0.6);
+  }
+
+  100% {
+    opacity: 0.2;
+    transform: scaleX(0.5);
+  }  
 }
