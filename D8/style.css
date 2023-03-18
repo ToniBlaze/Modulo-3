@@ -1,0 +1,99 @@
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.navbar-collapse ul li.nav-item a {
+  font-size: 0.8rem;
+}
+
+.startNavBg {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 6%,
+    rgba(0, 0, 0, 0.233) 30%,
+    rgba(0, 0, 0, 0.575) 57%,
+    rgba(0, 0, 0, 0.8224789915966386) 87%
+  );
+}
+
+nav.startNavBg {
+  transition: background-color 0.3s linear;
+}
+
+.user-img {
+  height: 35px;
+  width: 35px;
+}
+
+.dropdown-toggle::after {
+  margin-left: 0;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* HOVER ELEMENTI NAVBAR */
+
+#right-navbar div span {
+  font-size: 0.8rem;
+}
+
+.nav-item a,
+#right-navbar div {
+  transition: all 0.2s ease-in;
+}
+
+.nav-item a:hover,
+#right-navbar div:not(:last-of-type):hover {
+  transform: scale(1.2);
+  font-weight: 900;
+  color: white;
+}
+
+/* JUMBOTRON */
+.custom-bg {
+  background-image: url("assets/movies/topgun.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#jumbotron h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 4rem;
+}
+
+#jumbotron button:last-of-type {
+  background-color: grey;
+}
+
+#jumbotron button:last-of-type:hover {
+  background-color: rgb(99, 99, 99);
+}
+
+/* CAMBIAMENTI IN MOBILE */
+
+@media screen and (max-width: 768px) {
+  #navbarSupportedContent {
+    background-color: black;
+    padding-bottom: 10px;
+  }
+
+  #jumbotron {
+    max-height: 40vh;
+    padding: 0;
+  }
+
+  #jumbotron h1 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 2.5rem;
+    padding-top: 8rem;
+  }
+
+  #jumbotron button {
+    font-size: 12px;
+  }
+}
