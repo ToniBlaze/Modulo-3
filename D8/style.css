@@ -3,6 +3,8 @@ body {
   margin: 0;
   padding: 0;
   border: none;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .navbar-collapse ul li.nav-item a {
@@ -56,7 +58,7 @@ nav.startNavBg {
 }
 
 /* JUMBOTRON */
-.custom-bg {
+#custom-bg-jumbotron {
   background-image: url("assets/movies/topgun.jpg");
   background-position: center;
   background-size: cover;
@@ -66,34 +68,119 @@ nav.startNavBg {
   font-size: 4rem;
 }
 
-#jumbotron button:last-of-type {
+#jumbotron div:last-of-type button {
   background-color: grey;
 }
 
-#jumbotron button:last-of-type:hover {
+#jumbotron div:last-of-type button:hover {
   background-color: rgb(99, 99, 99);
 }
 
-/* CAMBIAMENTI IN MOBILE */
+/* CAROUSEL */
+img.carousel-height {
+  height: 150px !important;
+}
 
-@media screen and (max-width: 768px) {
+.carousel-control-prev {
+  transform: translateX(-50%);
+  width: 50px;
+}
+
+.carousel-control-next {
+  transform: translateX(50%);
+  width: 50px;
+}
+
+
+
+/* *************************** */ 
+/* CAMBIAMENTI IN TABLET PICCOLI */
+
+@media screen and (max-width: 767x) {
+
+  /* CAROUSEL */
+  img.carousel-height {
+    height: 20vh !important;
+  }
+
+  .carousel-control-prev {
+    transform: translateX(-30%);
+  }
+  
+  .carousel-control-next {
+    transform: translateX(30%);
+  }
+  
+}
+
+
+/* ******************************* */
+
+/* CAMBIAMENTI in TABLET */
+
+@media screen and (max-width: 991px) {
+  .nav-item a,
+  #right-navbar div {
+    transition: all 0.2s ease-in;
+  }
+
+  .nav-item a:hover,
+  #right-navbar div:not(:last-of-type):hover {
+    transform: scaly(1.3);
+    transform: scaleX(1.5);
+    transform: translateX(8px);
+    font-weight: 900;
+    color: white;
+  }
+
   #navbarSupportedContent {
     background-color: black;
     padding-bottom: 10px;
   }
 
   #jumbotron {
-    max-height: 40vh;
+    max-height: 30vh;
     padding: 0;
   }
 
   #jumbotron h1 {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-size: 2.5rem;
-    padding-top: 8rem;
   }
 
   #jumbotron button {
     font-size: 12px;
   }
+
+  img.carousel-height {
+    height: 10vh !important;
+  }
+  
+  .carousel-control-prev {
+    transform: translateX(-42%);
+  }
+  
+  .carousel-control-next {
+    transform: translateX(42%);
+  }
+
+}
+
+/* ************************** */
+/* CAMBIAMENTI IN DESKTOP/PC */
+
+@media screen and (max-width: 1199px) {
+  /* CAROUSEL */
+  img.carousel-height {
+    height: 10vh !important;
+  }
+
+  .carousel-control-prev {
+    transform: translateX(-48%);
+  }
+  
+  .carousel-control-next {
+    transform: translateX(48%);
+  }
+  
 }

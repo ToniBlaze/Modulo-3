@@ -14,55 +14,57 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 
-<body class="bg-black">
-	
+<body class="bg-black w-100">
 
-	<!-- Jumbotron + navbar -->
-	<div class="mb-4 bg-light w-100 custom-bg position-relative top-0">
+
+	<!-- Navbar + Jumbotron + navbar -->
+	<section id="custom-bg-jumbotron" class="mb-4 bg-light w-10 position-relative top-0">
+
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-expand-lg sticky-top col-12 py-0 z-2 border-bottom-0">
-			<!-- PARTE SINISTRA CON LOGO -->
+
+			<!-- PARTE SINISTRA NAVBAR CON LOGO -->
 			<div class="container-fluid">
 				<img class="mx-3 my-2" src="assets/Netflix_Logo_RGB.png" height=45px width=auto />
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-					aria-label="Toggle navigation">
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-	
+
 				<!-- dropdown -->
 				<div class="collapse navbar-collapse px-0" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-	
+
 						<li class="nav-item text-white mx-2 ">
 							<a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
 								aria-expanded="false">
-								Home
+								<span>Home</span>
 							</a>
 						</li>
-	
+
 						<li class="nav-item text-white mx-2">
 							<a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
 								aria-expanded="false">
 								Tv Shows</a>
 						</li>
-	
+
 						<li class="nav-item text-white mx-2">
 							<a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
 								aria-expanded="false">
 								Movies</a>
 						</li>
-	
+
 						<li class="nav-item text-white mx-2">
 							<a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
 								aria-expanded="false">
 								Recently added</a>
 						</li>
-	
-	
+
+
 					</ul>
-	
-					<!-- PARTE DESTRA  -->
+
+					<!-- PARTE DESTRA NAVBAR -->
 					<div class="d-flex text-white align-items-center pe-3" id="right-navbar">
 						<div>
 							<i class="bi bi-search px-2"></i>
@@ -94,14 +96,136 @@
 		<!-- Jumbotron-->
 		<div id="jumbotron" class="container-fluid p-5" style="height: 70vh;">
 			<h1 class="text-warning my-4">TOP GUN</h1>
-			<button class="btn btn-primary btn-lg" type="button">Riproduci</button>
-			<button class="btn btn-secondary btn-lg border-0" type="button"><span>Altre info</span></button>
+			<button class="btn btn-light btn-lg py-0" type="button">
+				<div class="d-flex align-items-center">
+					<div>
+						<i class="bi-play-fill fs-2 pe-1"></i>
+					</div>
+					<span>Riproduci</span>
+				</div>
+			</button>
+			<button class="btn btn-secondary btn-lg border-0" type="button">
+				<div class="d-flex align-items-center">
+					<div>
+						<i class="bi bi-info-circle fs-6 pe-2"></i>
+					</div>
+					<span>Altre info</span>
+				</div>
+
+			</button>
 		</div>
-	</div>
+	</section>
+
+	<!-- Titolo prima dei caroselli -->
+	<section>
+		<p class="text-white">Da mettere titolo e bottone con dropdown</p>
+		<p class="text-white">Fare card con animazione durante hover: <br> 
+			1. Deve ingrandirsi ecc e comparire una sezione nuova <br> 
+			2. Nella sezione deve esserci Titolo e altre consine tipo netflix <br> 
+			3.Fare in modo che quando carica la pagina le sezioni si caraichino una alla volta</p>
+	</section>
+
+	<!-- Prima Sezione con carosello -->
+	<section class="px-4">
+		<div class="container-fluid">
+			<div class="row">
+				<!-- TITOLO -->
+				<nav class="navbar bg-black">
+					<div class="container-fluid px-4 py-3">
+						<span class="navbar-brand mb-0 h1 text-white">
+							Trending Now
+						</span>
+					</div>
+				</nav>
+
+				<!-- CAROSELLO CON CARD -->
+				<div class="slider bg-black">
+
+					<div id="first-slider" class="carousel slide">
+
+						<div class="carousel-inner">
+
+							<div class="carousel-item active">
+								<div class="container-fluid">
+									<div class="row gx-2">
+										<div class="col">
+											<img src="assets/movies/1.png" class="d-block img-fluid w-100 carousel-height"
+												alt="...">
+										</div>
+										<div class="col">
+											<img src="assets/movies/2.png" class="d-block img-fluid w-100 carousel-height"
+												alt="...">
+										</div>
+										<div class="col">
+											<img src="assets/movies/3.png" class="d-block img-fluid w-100 carousel-height"
+												alt="...">
+										</div>
+										<div class="col">
+											<img src="assets/movies/4.png" class="d-block img-fluid w-100 carousel-height"
+												alt="...">
+										</div>
+										<div class="col">
+											<img src="assets/movies/5.png" class="d-block img-fluid w-100 carousel-height"
+												alt="...">
+										</div>
+										<div class="col">
+											<img src="assets/movies/6.png" class="d-block img-fluid w-100 carousel-height"
+												alt="...">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="container-fluid px-4">
+									<div class="row gx-2">
+										<div class="col">
+											<img src="assets/movies/3.png" class="d-block img-fluid w-100 carousel-height"
+												alt="...">
+										</div>
+										<div class="col">
+											<img src="assets/movies/3.png" class="d-block img-fluid w-100 carousel-height"
+												alt="...">
+										</div>
+										<div class="col">
+											<img src="assets/movies/3.png" class="d-block img-fluid w-100 carousel-height"
+												alt="...">
+										</div>
+										<div class="col">
+											<img src="assets/movies/3.png" class="d-block img-fluid w-100 carousel-height"
+												alt="...">
+										</div>
+										<div class="col">
+											<img src="assets/movies/3.png" class="d-block img-fluid w-100 carousel-height"
+												alt="...">
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<button class="carousel-control-prev" type="button" data-bs-target="#first-slider"
+							data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#first-slider"
+							data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
 
 
 	<div style="height: 1000px;"></div>
-
+	
 	<script src=".\bootstrap\js\bootstrap.js"></script>
 	<script src="main.js"></script>
 </body>
