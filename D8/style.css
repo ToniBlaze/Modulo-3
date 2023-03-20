@@ -51,7 +51,11 @@ nav.startNavBg {
 }
 
 .nav-item a:hover,
-#right-navbar div:not(:last-of-type):hover {
+.nav-item a:focus,
+.nav-item a:active,
+#right-navbar div:not(:last-of-type):hover,
+#right-navbar div:not(:last-of-type):focus
+#right-navbar div:not(:last-of-type):active {
   transform: scale(1.2);
   font-weight: 900;
   color: white;
@@ -76,6 +80,35 @@ nav.startNavBg {
   background-color: rgb(99, 99, 99);
 }
 
+/* TITOLO CON SELECT E ICONE A DESTRA */
+
+.icon-right {
+  height: 35px;
+  width: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid gray;
+  color: gray;
+}
+
+.icon-right:hover,
+.icon-right:focus,
+.icon-right:active {
+  height: 35px;
+  width: 35px;
+
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+select.form-select {
+  height: 40px;
+  width: 130px;
+}
+
 /* CAROUSEL */
 img.carousel-height {
   height: 150px !important;
@@ -91,13 +124,54 @@ img.carousel-height {
   width: 50px;
 }
 
+/* FOOTER */
+ul.nav.flex-column li {
+  font-size: 12px;
+}
 
 
-/* *************************** */ 
+
+
+/* *************************** */
+/* CAMBIAMENTI IN MOBILE */
+
+@media screen and (max-width: 575px) {
+  .icon-right {
+    height: 27px;
+    width: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    color: gray;
+  }
+
+  .icon-right:hover,
+  .icon-right:focus,
+  .icon-right:active {
+    height: 27px;
+    width: 27px;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+  }
+
+  select.form-select {
+    font-size: 12px;
+    height: 30px;
+    width: auto;
+  }
+
+  nav div div h2, nav div span {
+    font-size: 20px;
+  }
+
+
+}
+
+/* *************************** */
 /* CAMBIAMENTI IN TABLET PICCOLI */
 
 @media screen and (max-width: 767x) {
-
   /* CAROUSEL */
   img.carousel-height {
     height: 20vh !important;
@@ -106,13 +180,11 @@ img.carousel-height {
   .carousel-control-prev {
     transform: translateX(-30%);
   }
-  
+
   .carousel-control-next {
     transform: translateX(30%);
   }
-  
 }
-
 
 /* ******************************* */
 
@@ -153,17 +225,16 @@ img.carousel-height {
   }
 
   img.carousel-height {
-    height: 10vh !important;
+    height: 15vh !important;
   }
-  
+
   .carousel-control-prev {
     transform: translateX(-42%);
   }
-  
+
   .carousel-control-next {
     transform: translateX(42%);
   }
-
 }
 
 /* ************************** */
@@ -172,15 +243,14 @@ img.carousel-height {
 @media screen and (max-width: 1199px) {
   /* CAROUSEL */
   img.carousel-height {
-    height: 10vh !important;
+    height: 15vh !important;
   }
 
   .carousel-control-prev {
     transform: translateX(-48%);
   }
-  
+
   .carousel-control-next {
     transform: translateX(48%);
   }
-  
 }
