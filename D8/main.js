@@ -22,16 +22,14 @@ window.onload = function () {
 
 
 const sections = document.getElementsByTagName("section");
-
 let index = 0;
 
 function showSection() {
   sections[index].style.opacity = 1;
-
   index++;
 
   if (index < sections.length) {
-    setTimeout(showSection, 1000);
+    setTimeout(showSection, 800);
   }
 }
 
