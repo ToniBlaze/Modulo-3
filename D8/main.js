@@ -10,7 +10,6 @@ function changeNavbarColor() {
       navbar.classList.add("bg-black");
     } else {
       navbar.classList.remove("bg-black");
-
       navbar.classList.add("startNavBg");
     }
   });

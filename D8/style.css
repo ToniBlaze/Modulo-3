@@ -14,7 +14,6 @@ body {
 
 section {
   opacity: 0;
-
   transition: opacity 1s easy-in-out;
 }
 
