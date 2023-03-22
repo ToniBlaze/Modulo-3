@@ -1,10 +1,21 @@
 body {
   width: 100vw;
+
   margin: 0;
+
   padding: 0;
+
   border: none;
+
   box-sizing: border-box;
+
   overflow-x: hidden;
+}
+
+section {
+  opacity: 0;
+
+  transition: opacity 1s easy-in-out;
 }
 
 .navbar-collapse ul li.nav-item a {
@@ -13,11 +24,15 @@ body {
 
 .startNavBg {
   background: rgb(0, 0, 0);
+
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 0) 6%,
+
     rgba(0, 0, 0, 0.233) 30%,
+
     rgba(0, 0, 0, 0.575) 57%,
+
     rgba(0, 0, 0, 0.8224789915966386) 87%
   );
 }
@@ -28,6 +43,7 @@ nav.startNavBg {
 
 .user-img {
   height: 35px;
+
   width: 35px;
 }
 
@@ -54,21 +70,30 @@ nav.startNavBg {
 .nav-item a:focus,
 .nav-item a:active,
 #right-navbar div:not(:last-of-type):hover,
-#right-navbar div:not(:last-of-type):focus
-#right-navbar div:not(:last-of-type):active {
+#right-navbar
+  div:not(:last-of-type):focus
+  #right-navbar
+  div:not(:last-of-type):active {
   transform: scale(1.2);
+
   font-weight: 900;
+
   color: white;
 }
 
 /* JUMBOTRON */
+
 #custom-bg-jumbotron {
   background-image: url("assets/movies/topgun.jpg");
+
   background-position: center;
+
   background-size: cover;
 }
+
 #jumbotron h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
   font-size: 4rem;
 }
 
@@ -84,13 +109,17 @@ nav.startNavBg {
 
 .icon-right {
   height: 35px;
+
   width: 35px;
 
   display: flex;
+
   justify-content: center;
+
   align-items: center;
 
   border: 1px solid gray;
+
   color: gray;
 }
 
@@ -98,51 +127,99 @@ nav.startNavBg {
 .icon-right:focus,
 .icon-right:active {
   height: 35px;
+
   width: 35px;
 
   border: 1px solid rgb(255, 255, 255);
+
   color: rgb(255, 255, 255);
 }
 
 select.form-select {
   height: 40px;
+
   width: 130px;
 }
 
 /* CAROUSEL */
+
 img.carousel-height {
   height: 150px !important;
 }
 
 .carousel-control-prev {
   transform: translateX(-50%);
+
   width: 50px;
 }
 
 .carousel-control-next {
   transform: translateX(50%);
+
   width: 50px;
 }
 
+/* CARD */
+
+.myCard {
+  position: relative;
+
+  display: block;
+
+  transition: all 0.3s ease-out;
+}
+
+.carousel-inner:focus .myCard,
+.carousel-inner:hover .myCard {
+  transform: translateX(-25%);
+}
+
+.myCard:focus ~ .myCard,
+.myCard:hover ~ .myCard {
+  transform: translateX(25%);
+}
+
+.carousel-inner .myCard:focus,
+.carousel-inner .myCard:hover {
+  transform: scale(1.5);
+
+  z-index: 1;
+}
+
+.card-body {
+  display: none;
+
+  position: absolute;
+}
+
+.myCard:hover .card-body {
+  display: block;
+}
+
 /* FOOTER */
+
 ul.nav.flex-column li {
   font-size: 12px;
 }
 
-
-
-
 /* *************************** */
+
 /* CAMBIAMENTI IN MOBILE */
 
 @media screen and (max-width: 575px) {
   .icon-right {
     height: 27px;
+
     width: 27px;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     border: 1px solid gray;
+
     color: gray;
   }
 
@@ -150,29 +227,35 @@ ul.nav.flex-column li {
   .icon-right:focus,
   .icon-right:active {
     height: 27px;
+
     width: 27px;
+
     border: 1px solid rgb(255, 255, 255);
+
     color: rgb(255, 255, 255);
   }
 
   select.form-select {
     font-size: 12px;
+
     height: 30px;
+
     width: auto;
   }
 
-  nav div div h2, nav div span {
+  nav div div h2,
+  nav div span {
     font-size: 20px;
   }
-
-
 }
 
 /* *************************** */
+
 /* CAMBIAMENTI IN TABLET PICCOLI */
 
 @media screen and (max-width: 767x) {
   /* CAROUSEL */
+
   img.carousel-height {
     height: 20vh !important;
   }
@@ -199,24 +282,31 @@ ul.nav.flex-column li {
   .nav-item a:hover,
   #right-navbar div:not(:last-of-type):hover {
     transform: scaly(1.3);
+
     transform: scaleX(1.5);
+
     transform: translateX(8px);
+
     font-weight: 900;
+
     color: white;
   }
 
   #navbarSupportedContent {
     background-color: black;
+
     padding-bottom: 10px;
   }
 
   #jumbotron {
     max-height: 30vh;
+
     padding: 0;
   }
 
   #jumbotron h1 {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
     font-size: 2.5rem;
   }
 
@@ -238,10 +328,12 @@ ul.nav.flex-column li {
 }
 
 /* ************************** */
+
 /* CAMBIAMENTI IN DESKTOP/PC */
 
 @media screen and (max-width: 1199px) {
   /* CAROUSEL */
+
   img.carousel-height {
     height: 15vh !important;
   }
